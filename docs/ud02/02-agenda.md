@@ -1,5 +1,7 @@
 # 2.Agenda
 
+!!!note "Contingut" 
+    Index del temari.
 
  1. Introducció
  2. Agenda

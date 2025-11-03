@@ -3,8 +3,51 @@ site_name: Apunts UD02 — Introducció a Java (DAM)
 site_description: Apunts de la UD02 per a Programació 1r DAM
 docs_dir: 'md/ud02'
 site_dir: 'docs'
+theme:
+  name: material
+  language: ca
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.sections
+    - content.code.copy
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+          linenums: true
+  - pymdownx.superfences
+        custom_fences:
+      - name: mermaid
+        class: mermaid
+        format: !!python/name:pymdownx.superfences.fence_code_format
+  - toc:
+      permalink: true
+  - tables
+  - footnotes
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.highlight
+  - pymdownx.superfences
+plugins:
+   - search
+   - glightbox
+   - pdf-export
+        combined: true
+palette:
+      - scheme: default
+      toggle:
+          icon: material/brightness-7 
+          name: Canvia a mode oscur
 
+      - scheme: slate
+      toggle:
+          icon: material/brightness-4
+          name: Canvia a mode clar
+extra_css:
+ - style.css
 
+edit_uri: ""
 
 
 nav:
